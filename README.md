@@ -1,4 +1,5 @@
 🐍 Snake Game
+
 A simple and fun single-player Snake Game built using Python's turtle library.
 
 🎮 Features
@@ -23,7 +24,7 @@ How to Run
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/snake-game.git
+git clone https://github.com/hardik1234-cyber/Snake-Game-.git
 cd snake-game
 python snake.py
 
