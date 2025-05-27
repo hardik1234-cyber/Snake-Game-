@@ -4,13 +4,15 @@ WORKDIR /app
 
 COPY pyproject.toml poetry.lock /app/
 
-RUN pip install poetry \
+RUN pip install --upgrade pip \
+    && pip install poetry \
     && poetry config virtualenvs.create false \
     && poetry install --no-dev --no-interaction --no-ansi
 
 COPY . /app
 
-EXPOSE 8000
+ENV DISPLAY=:0
 
+EXPOSE 8000
 
 CMD ["python", "snakegame.py"]
